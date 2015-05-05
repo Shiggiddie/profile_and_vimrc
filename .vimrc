@@ -16,12 +16,13 @@ filetype plugin on                    " per-filetype plugins
 "filetype indent on                    " per-filetype indent
 colorscheme railscasts                " looks like total ass in non-256 color, but whatevs
 
+autocmd FileType * set tabstop=2|set shiftwidth=2|set noexpandtab
+autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
+autocmd FileType java set tabstop=4|set shiftwidth=4|set expandtab
 set autoindent                        " be smart
 set smarttab                          " also smart
-set shiftwidth=4                      " width of line-initial tab, maybe some other stuff
 set shiftround
 set softtabstop=4                     " 4 space tabs (soft)
-set tabstop=4                         " 4 space tabs (hard)
 set expandtab                         " use soft tabs
 set enc=utf-8                         " still don't know, really
 set fenc=utf-8                        " same
